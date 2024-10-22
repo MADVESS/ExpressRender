@@ -5,8 +5,14 @@ const PORT = 5000;
 
 app.get("/", (req, res) => {
   res.status(200);
-  res.send("This is from root");
+  res.send("hihi this is render test");
 });
+
+app.get("/hello", (req,res) =>{
+   res.status(200);
+   res.send("hello world")
+})
+
 
 app.listen(PORT, (error) => {
   if (!error) {
